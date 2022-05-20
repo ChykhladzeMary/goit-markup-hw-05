@@ -725,15 +725,59 @@ background-color: var(--background-main-btn);
     content: " ";
     display: block;
     width: 100%;
-    height: 2px;
+    height: 4px;
     background-color: var(--accent-color);
     position: absolute;
-
+    border-radius: 2px;
+    bottom: 0px;
+    left: 0px;
 
 }
 
 .nav-link {
     position: relative;
-    bottom: 0px;
+    
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
     left: 0px;
+}
+
+.modal-wrapper {
+    background-color: #ffffff;
+    width: 528px;
+    height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 581px;
+    left: 536px;
+}
+
+.modal-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    right: 4px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
