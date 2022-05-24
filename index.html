@@ -67,7 +67,24 @@
             <button class="hero-button" type="button"data-modal-open>Заказать услугу</button>
             </div>
             <div class="backdrop" data-modal>
+                
                 <div class="modal-wrapper">
+                    <p>Оставьте свои данные, мы вам перезвоним</p>
+                    <form class="backdrop-form">
+                        <label for="name">Имя</label>
+                            <input type="text" name="name" id="name">
+                        </label>
+
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel">
+                        </label>
+
+                        <label for="E-mail">Почта</label>
+                        <input type="mail" name="E-mail" id="E-mail">
+                        </label>
+                        </form>
+                     
+                      
                     <button class="modal-btn" data-modal-close> 
                         <svg class="modal-icon" width="11" height="11">
                             <use href="./images/icons.svg#icon-Vector-8"></use>
@@ -507,6 +524,22 @@
 </li>
     </ul>
 </div>
+</div>
+
+<div class="submit-form">
+    <p class="attention-submit">Подпишитесь на рассылку</p>
+    <form class="form">
+        <label for="E-mail">E-mail</label>
+        <input type="E-mail" name="E-mail" id="mail" placeholder="E-mail">
+    
+    <button class="submit" type="submit">Подписаться</button>
+  
+        <svg class="submit-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+        </svg>
+    
+    </form>
+    
 </div>
     </footer>
 <script src="./js/madal.js"></script>

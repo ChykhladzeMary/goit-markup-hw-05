@@ -402,11 +402,11 @@ transition: background-color var(--animation);
 }
 
 .container-footer {
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
-        margin-right: 156px;
-        margin-left: 215px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-right: 156px;
+    margin-left: 215px;
 
 }
 
@@ -722,15 +722,15 @@ transition: background-color var(--animation);
     background-color: rgba(47, 48, 58, 0.8);
     position: absolute;
     bottom: 0px;
-        right: 0px;
-        color: var(--title-color);
-        font: Roboto;
-            font-weight: 700;
-            font-size: 14px;
-            text-align: center;
-            line-height: 1,17;
-            letter-spacing: 0,03em;
-            text-transform: uppercase;
+    right: 0px;
+    color: var(--title-color);
+    font: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1,17;
+    letter-spacing: 0,03em;
+    text-transform: uppercase;
     
 }
 
@@ -857,4 +857,47 @@ transition: background-color var(--animation);
     position: relative;
     overflow: hidden;
    
+}
+
+.submit {
+    display: flex;
+background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.attention-submit {
+        font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 20px;
+            margin-left: 154px;
+}
+
+
+
+.form {
+    display: flex;
+    margin-left: 93px;
+    margin-right: 12px;
+    width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
 }
