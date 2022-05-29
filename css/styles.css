@@ -303,8 +303,8 @@ img {
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url("../images/pic-hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/pic-hero.jpg");
    
 }
 
@@ -794,6 +794,13 @@ transition: background-color var(--animation);
     top: 0px;
     left: 0px;
     transition: opacity var(--animation), visibility var(--animation);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .modal-wrapper {
@@ -840,11 +847,6 @@ transition: background-color var(--animation);
     justify-content: center;
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
 
 .animation-description {
     display: block;
