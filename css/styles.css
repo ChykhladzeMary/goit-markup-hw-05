@@ -10,8 +10,8 @@ html {
 }
 .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid crimson; */
@@ -88,7 +88,8 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     margin-right: 93px;
- 
+ padding-top: 24px;
+ padding-bottom: 25px;
    
 }
 
@@ -123,7 +124,7 @@ img {
     }
 
     .navigation {
-        margin: auto;
+        margin-right: auto;
     }
     
 .nav-link:hover, .nav-link:focus {
@@ -177,13 +178,15 @@ img {
     padding-bottom: 32px;
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
-    transition: color var(--animation);
+    
 }
 .link {
     text-decoration: none;
     color: currentColor;
+   
 }
 
 
@@ -253,12 +256,14 @@ img {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     fill: #FFFFFF;
+    transition: background-color var(--animation);
 
 }
 
-.attention-link:hover {
+.attention-link:hover, 
+.attention-link:focus {
     background-color: #2196F3;
-    transition: background-color var(--animation);
+ 
 }
 
 .attention-list {
@@ -401,8 +406,7 @@ transition: background-color var(--animation);
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+   padding: 94px 0;
 }
 
 .caption.centered {
@@ -410,24 +414,24 @@ transition: background-color var(--animation);
     margin-bottom: 50px;
 }
 
-.contacts-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.footer {
+    padding: 60px 0;
+   
     background-color: var(--background-color-basic);
-    display: flex;
-    align-items: baseline;
+   
 }
 
 .container-footer {
     display: flex;
-    justify-content: flex-start;
+  
     align-items: baseline;
-    margin-left: 215px;
+   
+   
 
 }
 
 .container-footer-address {
-    margin-right: 156px;
+    margin-right: 70px;
 
 }
 
@@ -580,12 +584,12 @@ transition: background-color var(--animation);
     display: inline-block;
     text-align: center;
     min-height: 38px;
+    transition: background-color var(--animation);
 }
 
 .menu:hover, .menu:focus {
     color: var(--title-color);
     background-color: var(--accent-color);
-    transition: background-color var(--animation);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -598,7 +602,7 @@ transition: background-color var(--animation);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+   
   
 }
 
@@ -613,6 +617,7 @@ transition: background-color var(--animation);
     height: 44px;
     background-color: var(--title-color);
     border-radius: 50%;
+    transition: background-color var(--animation);
 }
 
 .social-icon {
@@ -625,9 +630,10 @@ transition: background-color var(--animation);
     transition: fill var(--animation);
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
     background-color: var(--accent-color);
-    transition: background-color var(--animation);
+  
 }
 
 .clients {
@@ -666,11 +672,11 @@ transition: background-color var(--animation);
     margin-bottom: 50px;
 }
 .client-section {
-    padding-top: 50px;
     padding-bottom: 94px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     border-color: var(--accent-color);
     
 }
@@ -713,22 +719,9 @@ transition: background-color var(--animation);
         color: var(--title-color);
         margin-bottom: 20px;
 }
-.attention-link {
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        fill: var(--title-color);
-  
-}
 
-.attention-link:hover {
-        background-color: var(--accent-color);
-        transition: background-color var(--animation);
-}
+
+
 
 .attention-list {
         display: flex;
@@ -795,6 +788,7 @@ transition: background-color var(--animation);
     left: 0px;
     transition: opacity var(--animation), visibility var(--animation);
     background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -871,6 +865,17 @@ transition: background-color var(--animation);
     transform: translateY(-100%);
     opacity: 1;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.photo-link:hover,
+.photo-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.photo-link {
+    transition: color var(--animation);
 
 }
 
