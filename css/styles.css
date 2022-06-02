@@ -11,7 +11,7 @@ html {
 .container {
     width: 1200px;
     margin: 0 auto;
-    
+
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid crimson; */
@@ -154,6 +154,7 @@ img {
 
 .contact-icon { 
     margin-right: 10px;
+    fill: currentColor;
 
 }
 .contact-item:hover, .contact-item:focus {
@@ -186,6 +187,7 @@ img {
 .link {
     text-decoration: none;
     color: currentColor;
+    transition: color var(--animation), fill var(--animation);
    
 }
 
@@ -194,10 +196,6 @@ img {
     margin-left: 50px;
 }
 
-.address-map {
-    margin-bottom: 9px;
-    margin-top: 20px;
-}
 .address-mail {
     margin-bottom: 9px;
 }
@@ -234,6 +232,7 @@ img {
     letter-spacing: 0.03em;
     margin-right: 93px;
     display: inline-block;
+    margin-bottom: 20px;
 
 }
 
@@ -584,7 +583,7 @@ transition: background-color var(--animation);
     display: inline-block;
     text-align: center;
     min-height: 38px;
-    transition: background-color var(--animation);
+    transition: background-color var(--animation), color var(--animation), box-shadow var(--animation)
 }
 
 .menu:hover, .menu:focus {
@@ -664,7 +663,7 @@ transition: background-color var(--animation);
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-    padding-top: 94px;
+
 }
 
 .client.centered {
@@ -673,6 +672,7 @@ transition: background-color var(--animation);
 }
 .client-section {
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .clients-link:hover,
@@ -875,7 +875,8 @@ transition: background-color var(--animation);
 }
 
 .photo-link {
-    transition: color var(--animation);
+    display: block;
+    transition: box-shadow var(--animation);
 
 }
 
